@@ -19,22 +19,24 @@
       console.log('Congrats you received a passing grade!');
     } else { console.log('Oh no you failed!'); }
 
-    const student2score = Math.floor(Math.random() * 101);
+    const student2score = Math.floor(Math.random() * 110);
     console.log(student2score);
 
-    if (student2score < 100 && student2score >= 91) {
-      console.log('A');
-    } else if (student2score < 100 && student2score >= 90) {
-      console.log('B');
-    } else if (student2score < 90 && student2score >= 80) {
-      console.log('B');
-    } else if (student2score < 80 && student2score >= 70) {
-      console.log('C');
-    } else if (student2score < 70 && student2score >= 60) {
-      console.log('D');
-    } else if (student2score < 60) {
-      console.log('F');
-    } else { console.log('A++'); }
+    // if (student2score < 100 && student2score >= 91) {
+    //   console.log('A');
+    // } else if (student2score < 100 && student2score >= 90) {
+    //   console.log('B');
+    // } else if (student2score < 90 && student2score >= 80) {
+    //   console.log('B');
+    // } else if (student2score < 80 && student2score >= 70) {
+    //   console.log('C');
+    // } else if (student2score < 70 && student2score >= 60) {
+    //   console.log('D');
+    // } else if (student2score < 60) {
+    //   console.log('F');
+    // } else { console.log('A++'); }
+
+    if (student2score < 60) { console.log('F'); } else if (student2score <= 70) { console.log('D'); } else if (student2score <= 80) { console.log('C'); } else if (student2score <= 90) { console.log('B'); } else if (student2score <= 100) { console.log('A'); } else { console.log('A++'); }
 
     const season = 'winter';
 
@@ -47,7 +49,7 @@
     } else { console.log("it's cold today"); }
 
     const dayOfTheWeek = 'thursday';
-    if (dayOfTheWeek === 'saturday' && dayOfTheWeek === 'sunday') {
+    if (dayOfTheWeek === 'saturday' || dayOfTheWeek === 'sunday') {
       console.log('have a good weekend');
     } else { console.log("it's a weekday"); }
   </script>
