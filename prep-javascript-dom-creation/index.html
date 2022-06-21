@@ -10,11 +10,9 @@
   <script>
     // Your code here
     const $container = document.querySelector('#container');
-    console.log($container);
 
     const $heading = document.createElement('h1');
-    document.getElementsByTagName('$heading').textContent = ('Hello World!');
-    console.log($heading);
+    $heading.textContent = 'Hello World!';
 
     $container.appendChild($heading);
   </script>
